@@ -2,8 +2,10 @@
 
 ### The purpose of this project
 1. Update current script for file 'monthly sales report-googlesheet.ipynb' based on the change of Googlesheet. 
-2. Design an analytic report with visualization
-3. Refine the entire automation process
+2. Design an analytic report with visualization.
+3. Refine the entire automation process.
+4. Set restrictions to Googlesheet to avoid data missing/incorreation 
+
 
 
 ### Script update
@@ -23,10 +25,15 @@
 1. Fix Quartzy data export issue due to the change of ID
 2. Figure out it is feasible to set a time to auto run the reports.
 
+
+### GoogleSheet restrictions
+1. Column Completed shouldn't be merged - set protection 
+2. 
+
 ### Automation Process
 1. Get inventory data from Quartzy. Using 'Quartzy_automation.ipynb' file. 
 2. Clean inventory data and generate the report. Using 'monthly inventory.ipynb' file
 3. Download the monthly sales records from google sheet using the link below. The digits should be changed. 
-https://docs.google.com/spreadsheets/d/1BNtwHjC81NS4UThi1QABrlvpoNFTSuILSxG8dmSSk3A/export?format=xlsx&gid=439584568
+https://docs.google.com/spreadsheets/d/1BNtwHjC81NS4UThi1QABrlvpoNFTSuILSxG8dmSSk3A/export?format=xlsx&gid=969104875
 4. Clean sales data and generate the report. Using 'monthly sales report-googlesheet.ipynb' file
 5. Update sales table. Using 'sales_table_update.ipynb' file. 
